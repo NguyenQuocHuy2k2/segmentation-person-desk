@@ -1,0 +1,14 @@
+path: ../datasets/PhanLoaiConNguoiBanGhe
+train: images/train
+val: images/train
+test:
+
+nc: 2
+names: ['desk', 'person']
+
+roboflow:
+  workspace: phanloaisinhvienbanghe
+  project: phanloaisinhvienbanghe
+  version: 3
+  license: CC BY 4.0
+  url: https://universe.roboflow.com/phanloaisinhvienbanghe/phanloaisinhvienbanghe/dataset/3
