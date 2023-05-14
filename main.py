@@ -15,10 +15,10 @@ class MainWindow(QMainWindow):
         super().__init__()
         self.uic = Ui_MainWindow()
         self.uic.setupUi(self)
-        self.uic.Browse.clicked.connect(self.start_capture_image)
+        self.uic.Browse.clicked.connect(self.start_browse_image)
         self.thread = {}
 
-    def start_capture_image(self):
+    def start_browse_image(self):
         options = QFileDialog.Options()
         options |= QFileDialog.DontUseNativeDialog
         file_path, _ = QFileDialog.getOpenFileName(self, "Open Image", "", "All Files (*);;JPEG (*.jpg;*.jpeg)", options=options)
